@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Corner Market Branding</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Livvic:400,900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <style>
+  body {
+      font-family: Questrial, sans-serif;
+      font-size: 12px;
+      line-height: 1.8;
+      color: blue;
+  }
+  h3 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: blue;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: white;
+    color: blue;
+    padding: 100px 25px;
+    font-family: 'Questrial', sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #E0ECF8;
+  }
+  .btn {
+      display: inline-block;
+      width: 15%;
+      color: blue;
+      background-color: white;
+      border: 3px solid blue;
+      text-align: center;
+      font-size: 16px;
+      margin-left: 43%;
+      margin-right: 30%;
+  }
+  .btn:hover {
+      background-color: blue;
+      color: white;
+  }
+  
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: black;
+  }
+  .carousel-indicators li {
+    border-color: black;
+  }
+  .carousel-indicators li.active {
+    background-color: black;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+ .row {
+    background-image: url("images/sub.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 315px 6px;
+    padding-bottom:5rem
+}
+@media only screen and (min-width: 48.0625em) {
+    .row {
+  
+        background-size: 615px 220px;
+        padding-bottom:14rem
+    }
+}
+ 
+  .panel {
+    border: 1px solid yellow; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid yellow;
+    background-color: yellow !important;
+    color: white;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #9bff00 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #9bff00;
+    color: #fff;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+  }
+  .ml1 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color:#9bff00;
+  transform-origin: 0 0;
+}
+
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml3 {
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+  .navbar {
+    margin-bottom: 0;
+    background-color: white;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    padding: 30px;
+    border-radius: 0;
+    font-family: Livvic, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: blue !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: white !important;
+    background-color: #9bff00 !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: white !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:  #9bff00;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+ 
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+   
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+	text-align: center;
+	margin: 25px 0;
+	
+    }
+  }
+  
+  </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  
+  <!-- Navigation Bar -->      
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="images/gmb.html">Google My Business</a></li>
+        </ul>
+      </li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <!-- Logo -->
+        <a style="float:left" class="navbar-brand mx-auto d-block text-top js-scroll-trigger" href="index.html">
+              <img src="revised.jpg" style="margin: -30px" height="80" alt="Logo" class="center">
+            </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Jumbotron Carousel -->
+<div class="jumbotron text-center">
+  <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for Slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+	<a href="https://www.facebook.com/AngryDak/?modal=admin_todo_tour">
+	  <img src="images/img1.png" alt="angrydakfb" style="width:100%;"></a>
+      </div>
+
+      <div class="item">
+	<a href="https://www.instagram.com/angrydakrestaurant/">
+	<img src="images/img2.png" alt="angrydakinsta" style="width:100%;"></a>
+      </div>
+
+      <div class="item">
+	<a href="https://www.instagram.com/vegetalreino/">
+	<img src="images/img3.png" alt="veganinsta" style="width:100%;"></a>
+      </div>
+
+      <div class="item">
+	<a href="https://www.facebook.com/VegetalReino/">
+	<img src="images/img4.png" alt="veganfb" style="width:100%;"></a>
+      </div>
+
+      <div class="item">
+	<a href="https://twitter.com/VEGETALREINO">
+	<img src="images/img5.png" alt="vegantwitter" style="width:100%;"></a>
+      </div>
+    </div>
+
+    <!-- Left and Right Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+ 
+<!-- Container (Phase Section) -->
+<div id="phase" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8 text-left slideanim">
+      <h5>Phase 1</h5>
+      <h3>Examine Your Brand</h3>
+      <h4>We take action with your brand, and establish a custom course of action to take your business to the next level with immeasurable results.</h4>
+      <p style="font-size:12px">Figuring out how to brand yourself can be tricky. We analyze every aspect of your business to deduce how we can enhance your flow of business through establishing a greater online presence. Once we have a better idea of your needs, we’ll craft the special recipe to further grow and strengthen your brand. We use Cutting Edge, Proprietary Software, combined with our team of branding ‘Wizards’, to work with you along the way ensuring that you are always successful.</p>
+    </div>
+    <div class="col-sm-4">
+        <img src="images/phase1.jpg" alt="phase1" style="width:100%">
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="phase2"></span>
+        <img src="images/phase2.jpg" alt="phase2" style="width:100%">
+    </div>
+    <div class="col-sm-8 text-left slideanim">
+      <h5>Phase 2</h5>
+      <h3>Creating Your Online Presence</h3>
+      <h4>Whether you have a Social Media presence dedicated to your business or not, We develop and renovate social media pages from scratch, and give them a refreshing and attractive makeover which will keep your current customers hooked and attract new audiences!</h4>
+      <p style="font-size: 12px">Our team will monitor and continuously develop all of your Business Social Media Pages & ‘Google My Business Account’ to always be increasing your new business. We generate your growth while measuring data on every piece of content we create & publish for your pages. The content and design that we broadcast on your Business Social Media Pages are carefully curated to bring your business more engagement and publicity. Having your brand recognized via a constantly optimised online presence will increase your searchability, which just means, when your audience finds you online, we need you to be ready.</p>
+    </div>
+  </div>
+  </div>
+
+   <div class="row">
+    <div class="col-sm-8 text-left slideanim">
+      <h5>Phase 3</h5>
+      <h3>Tailored Content</h3>
+      <h4>We keep your social media accounts buzzing with current and local custom content.</h4>
+      <p style="font-size:12px">We have seamlessly integrated the wisdom of the most successful social media marketers in the world with cutting-edge, proprietary software, to create a custom, engaging, and profitable social media campaign. That is how we constantly post diverse, local, and current content to your accounts, making sure it is tailored specifically to your brand and community, to drive new business to you.</p>
+    </div>
+    <div class="col-sm-4">
+        <img src="images/phase3.jpg" alt="phase3" style="width:100%">
+    </div>
+  </div>
+</div>
+
+ <div class="row">
+    <div class="col-sm-4 slideanim">
+      <span class="phase4"></span>
+        <img src="images/phase4.jpg" alt="phase4" style="width:100%">
+    </div>
+    <div class="col-sm-8 text-left">
+      <h5>Phase 4</h5>
+      <h3>Guide Brand Growth</h3>
+      <h4>We target and establish a course of action for your desired growth.</h4>
+      <p style="font-size: 12px">Many professionals have neither the know-how, resources, nor the time it takes to brand and market themselves, HOWEVER, to help grow your business, WE, diagnose those Key Factors, so we can continuously grow your Business using your Social Media Presence. All of the content and materials we craft, will be done with your brand and desired growth in mind, so we can reach out to your audience, together, and pull them into your business.</p>
+    </div>
+  </div>
+</div>
+
+
+   <div class="five">
+    <div class="col-sm-8 text-left slideanim">
+      <h5>Phase 5</h5>
+      <h3>Account Development</h3>
+      <h4>We track and monitor your social media circles to generate traction and new consistency.</h4>
+      <p style="font-size:12px">We possess THE KEY to your short-term and long-term success….. CONTINUATION OF GROWTH! The success of this entire service is based on keeping up to date with algorithmical changes and the demand of the local audience. Our way, is the way of the 3 “UPs”. We are always UPkeeping, UPdating, and UPgrading your custom “Success Formula” to keep your new business growing with the times.</p>
+    </div>
+    <div class="col-sm-4">
+        <img src="images/phase5.jpg" alt="phase5" style="width:100%">
+    </div>
+  </div>
+ </div><br>
+
+<div class="button" position="center">
+  <button class="btn">Get Started</button>
+</div>
+<br>
+<br>
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center bg-grey">
+  <h1 class="ml1">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">Services</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+ 
+  <br>
+  <div class="slideanim">
+    <div class="col-sm-4 text-center">
+      <img src="images/fb.png" alt="fb" width="120" height="120"> 
+      <h4>Facebook</h4>
+      <p>Our team designs and builds Facebook business pages. We track trending photos and timed posts that actively engages with customers in your area.</p>
+      <img src="images/insta.png" alt="insta" width="120" height="120" >
+      <h4>Instagram</h4>
+      <p>Help get your brand recognized by  thousands of followers while getting hundreds of likes per post due to our customized content generator.</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/twitter.png" alt="twitter" width="140" height="120">
+      <h4>Twitter</h4>
+      <p>This platform is to create successful social media campaigns to boost sales, increase brand recognition and get more customers.</p>
+    </div>
+  </div>
+  <div class="slideanim" position="left">
+    <div class="col-sm-4">
+      <img src="images/youtube.png" alt="youtube" width="130" height="120">
+      <h4>YouTube</h4>
+      <p>Have your top favorite youtube channels that are tailored to your business streamlined across all your accounts to keep current on new activities and trends!</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/pint.png" alt="pint" width="130" height="120">
+      <h4>Pinterest</h4>
+      <p> Great platform to boost new engagements and audience. Have your brand reach millions more through by switching to business profile.</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/rss.png" alt="rss" width="120" height="120">
+      <h4>RSS</h4>
+      <p> Have access to as many trending & current  articles tailored strictly to about your business to your accounts in a standardized form.</p>
+    </div>
+  </div>
+</div>
+ 
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+   <div class="text-center">
+  <h1 class="ml6">
+  <span class="text-wrapper">
+    <span class="letters">Pricing</span>
+  </span>
+</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <h4>Choose Your Payment Plan</h4>
+  </div>
+  <div class="slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Essential</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>+</strong> High Quality Customized Facebook Business Page</p>
+          <p><strong>+</strong> Custom Graphics</p>
+          <p><strong>+</strong> Value Added Content</p>
+          <p><strong>+</strong> High Quality Banners(Digital Business Card)</p>
+          <p><strong>+</strong> Personalized About Me Section</p>
+	  <p><strong>+</strong> Landing Page</p>
+	  <p><strong>+</strong> Dedicated Social Media Experts</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$199</h3>
+          <h4>per month</h4>
+	  <h5>+ $349 set up fee</h5>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium Pro</h1>
+        </div>
+        <div class="panel-body">
+	  <p><strong>+</strong> Everything from Essential</p>
+          <p><strong>+</strong> Custom High End Video Banner</p>
+          <p><strong>+</strong> Boost Your Posts!</p>
+          <p><strong>+</strong> Custom Company/Branding Videos</p>
+          <p><strong>+</strong> Custom Virtual Tours/New Product Commercials</p>
+          <p><strong>+</strong> Custom High End Facebook Business Profile</p>
+	  <p><strong>+</strong> Custom High End Instagram Business Profile</p>
+	  <p><strong>+</strong> Automation Tool</p>
+	  <p><strong>+</strong> Monthly Analytic Growth Charts</p>
+        </div> 
+        <div class="panel-footer">
+          <h3>$299</h3>
+          <h4>per month</h4>
+	  <h5>+ $349 set up fee</h5>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Omega</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>+</strong> Everything from Essential & Premium Pro</p>
+          <p><strong>+</strong> Automate & Manage All Social Media Accounts</p>
+          <p><strong>+</strong> Custom High End Facebook Business Profile</p>
+          <p><strong>+</strong> Custom High End Instragram Business Profile</p>
+	  <p><strong>+</strong> Custom High End Twitter Business Profile</p>
+	  <p><strong>+</strong> Custom High End Pinterest Business Profile</p>
+	  <p><strong>+</strong> Trending RSS Feeds Plus Your Favorite Youtube Channels</p>
+	  <p><strong>+</strong> Phone Support System Every Step of the Way</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$799</h3>
+          <h4>per month</h4>
+	  <h5>+ $349 set up fee</h5>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Brands We Work With) -->
+<div class="container-fluid bg-grey text-center">
+   <h4>Join Thousands of Small Business Owners that have chosen Corner Market Branding to help them grow!</h4>
+
+        <div class="brands">
+
+          <div class="col-md-2">
+            <img src="images/client1.png" alt="client1"  width="100" height="100">
+          </div>
+
+          <div class="col-md-2">
+            <img src="images/client2.png" alt="client2"  width="130" height="100">
+          </div>
+
+          <div class="col-md-2">
+            <img src="images/client3.jpg" alt="client3"  width="100" height="100">
+          </div>
+
+          <div class="col-md-2">
+            <img src="images/client4.png" alt="client4"  width="150" height="130">
+          </div>
+
+          <div class="col-md-2">
+            <img src="images/client5.png" alt="client5"  width="150" height="130">
+          </div>
+
+          <div class="col-md-2">
+            <img src="images/client6.png" alt="client6"  width="150" height="130">
+          </div>
+
+	  <div class="col-md-2">
+            <img src="images/client7.png" alt="client7"  width="140" height="120">
+          </div>
+
+	  <div class="col-md-2">
+            <img src="images/client8.png" alt="client8"  width="160" height="140">
+          </div>
+
+	  <div class="col-md-2">
+            <img src="images/client9.png" alt="client9"  width="130" height="110">
+          </div>
+
+	  <div class="col-md-2">
+            <img src="images/client10.png" alt="client10"  width="150" height="120">
+          </div>
+
+	  <div class="col-md-2">
+            <img src="images/client11.png" alt="client11"  width="110" height="120">
+          </div>
+
+        </div>
+      </div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid">
+  <div class="cont">
+    <div class="col-sm-5">
+      <p>Contact Info:</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Los Angeles, CA US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1 (213)293-8731</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:Main@Cornermarketbranding.com?Subject=Hello%20" target="_top" style="color:blue">Main@Cornermarketbranding.com</a></p>
+    </div>
+  </div>
+
+  <div class="form">
+    <div class="col-sm-7 slideanim">
+<div class="contact" style="position:relative;left:250px;">
+  <h2>Get Started!</h2>
+  </div>
+<br>
+     <form method="POST" name="contact" action="send_form_email.php" enctype="multipart/form-data">
+       <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        <br>
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        <br>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="gsbutton">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default" type="submit">Send</button>
+        </div>
+      </div>
+      </form>
+ </div>
+</div>
+</div>
+</div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+<!-- Footer -->
+<div class="footer bg-grey">
+        <div class="container bg-grey">
+            <div class="text-center">
+              <div class="col mx-auto text-center"><br>
+                <h4 class="section-heading-written">Follow Us!</h4>
+                <div class="social-icons">
+                  <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/CornerMarketBranding/?modal=admin_todo_tour" target="_blank"><i class="fab fa-facebook" style="font-size:36px;color:blue"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/cornermarketbranding/" target="_blank"><i class="fab fa-instagram" style="font-size:36px;color:blue"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/CornerBranding" target="_blank"><i class="fab fa-twitter" style="font-size:36px;color:blue"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.pinterest.com/main0167/" target="_blank"><i class="fab fa-pinterest" style="font-size:36px;color:blue"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+	    </div>
+
+   <div class="row3">
+              <div class="col mx-auto text-center">
+                <a class="footer-link" href="privacy.html">Privacy Policy</a>
+		<a class="footer-link" href="terms.html" style="margin-left:1.0em">Terms of Use</a>
+		<a class="footer-link" href="info.html" style="margin-left:1.0em">Member Info</a>
+              </div>
+              </hr>
+	       <div class="up" style="margin-left:60.0em">
+                  <a href="#myPage" title="To Top">
+                 <span class="glyphicon glyphicon-chevron-up"></span>
+                 <h5 class="u" style="margin-left:-2.0em">Back to Top</h5>
+  </a>
+</div>
+            </div>	
+          </div>
+        </div>
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+<script>
+var textWrapper = document.querySelector('.ml1 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml1 .letter',
+    scale: [0.3,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 600,
+    delay: (el, i) => 70 * (i+1)
+  }).add({
+    targets: '.ml1 .line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700,
+    offset: '-=875',
+    delay: (el, i, l) => 80 * (l - i)
+  }).add({
+    targets: '.ml1',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+});
+</script>
+
+<script>
+  var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+  </script>
+
+<script>
+  var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='word'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3',
+    opacity: [0,1],
+    easing: "easeInQuad",
+    duration: 2500,
+    delay: (el, i) => 150 * (i+1)
+  })
+  .add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 3000,
+    easing: "easeOutExpo",
+    delay: 10000
+  });
+  </script>
+
+</body>
+</html>

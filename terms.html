@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Corner Market Branding</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Livvic:400,900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font-family: Questrial, sans-serif;
+      font-size: 14px;
+      line-height: 1.8;
+      color: blue;
+  }
+  h3 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: white;
+    color: blue;
+    padding: 100px 25px;
+    font-family: 'Questrial', sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #E0ECF8;
+  }
+  .btn {
+      display: inline-block;
+      width: 15%;
+      color: blue;
+      background-color: white;
+      border: 3px solid blue;
+      text-align: center;
+      font-size: 16px;
+      margin-left: 43%;
+      margin-right: 30%;
+  }
+  .btn:hover {
+      background-color: blue;
+      color: white;
+  }
+  
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: black;
+  }
+  .carousel-indicators li {
+    border-color: black;
+  }
+  .carousel-indicators li.active {
+    background-color: black;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+ .row {
+    background-image: url("images/sub.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 315px 6px;
+    padding-bottom:5rem
+}
+@media only screen and (min-width: 48.0625em) {
+    .row {
+  
+        background-size: 615px 220px;
+        padding-bottom:14rem
+    }
+}
+ 
+  .panel {
+    border: 1px solid yellow; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid yellow;
+    background-color: yellow !important;
+    color: white;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #9bff00 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #9bff00;
+    color: #fff;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: white;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    padding: 30px;
+    border-radius: 0;
+    font-family: Livvic, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: blue !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: white !important;
+    background-color: #9bff00 !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: white !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:  #9bff00;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+ 
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+   
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+	text-align: center;
+	margin: 25px 0;
+	
+    }
+  }
+  
+  </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  
+  <!-- Navigation Bar -->      
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="gmb.html">Google My Business</a></li>
+        </ul>
+      </li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <!-- Logo -->
+        <a style="float:left" class="navbar-brand mx-auto d-block text-top js-scroll-trigger" href="index.html">
+              <img src="images/revised.jpg" style="margin: -30px" height="80" alt="Logo" class="center">
+            </a>
+    </div>
+  </div>
+</nav>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container text-left">
+  <h2 style="color:black"><strong>Terms of Use</strong></h2>
+  <br>
+<h4><strong>Subscription Details</strong></h4>
+
+    <p>The decree confirms the earlier agreement between you and and Corner Market Branding  Social Media Specialist to subscribe to our service, electronically recorded with your permission. Unless explicitly contradicted by the order confirmation, the registered agreement described above will remain in full force and effect. Your subscription has been set up on a month by month basis. All agreements from month to month begin on the date you agree to subscribe to Corner Market Branding . Corner Market Branding  bills on the first day of the subscription, and you will continue to be billed automatically by direct deduction from the monthly anniversary of each month under the description Corner Market Branding. Corner Market Branding will not increase your monthly subscription without your explicit consent. For more information on how to register, please contact Customer Service.</p>
+
+<br>
+<h4><strong>Payment & Cancellation Policy</strong></h4>
+
+<p>It is your responsibility to update Corner Market Branding  with all and any changes to your personal information, including but not limited to: your personal and professional contact information, your website address subscribed, and your payment information. If your payment fails for any reason, your marketing can stay online for up to 30 days and we will contact you to collect payment information. This in no way negates your obligation to pay all amounts due to Corner Market Branding . If your account is not brought current within 30 days, we can turn over your account to a collection agency. All cancellations must be requested at least three (3) working days before the monthly anniversary date by calling (213) 293-8731, option 1, then option 2. If the cancellation is not given within that period, Corner Market Branding can not prevent an automatic charge on the account. While all fees established and monthly fees are not refundable, a refund can be made from your account at the discretion of the director of accounts. For more information on how to register, please call Customer Service.</p>
+
+<br>
+<h4><strong>General</strong></h4>
+
+<p> Corner Market Branding and its subsidiaries operate a family of websites and associated web pages. Any person accessing or using the Corner Market Branding website is referred to as 'you'.</p>
+
+<br>
+<h4><strong>Acceptance of Terms</strong></h4>
+
+<p>By accessing or using any part of this website or the services provided on it or other websites as set forth below (collectively, the "Services"), you agree to accept and comply with the terms, conditions, and notices stated herein and as may be modified by Corner Market Branding from time-to-time without notice to you (the "Terms of Use"). These Terms of Use constitute a binding contract between Corner Market Branding and you. You are responsible for regularly reviewing the Terms of Use. You can review the most current version of the Terms of Use at any time. If you do not wish to be bound by these Terms of Use, please do not access or use any part of the website or network. Additional terms may govern use of certain websites or web pages within the Corner Market Branding Family. In the event that any provision, term or guideline contained on a particular website or web page in the Corner Market Branding Family conflicts with the Terms of Use, the terms of such website or web page shall control over the Terms of Use except with respect to the General Terms set forth below, which shall at all times control.</p>
+
+<br>
+<h4><strong>General Use of Corner Market Branding Family</strong></h4>
+<p>Unless specified otherwise,  Corner Market Branding  offers you access to the Corner Market Branding  Family solely for your personal and non-commercial uses. You agree to only access or use the Corner Market Branding Family only for legal purposes that are permitted by the Terms of Use. Among other things, you agree not to: Except with the express written permission of Corner Market Branding , modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, frame in another web page, use on any other website, transfer or sell any information, software, lists of users, databases or other lists, products or services provided through or obtained from the  Corner Market Branding  Family, including without limitation, engaging in the practices of "screen scraping," "database scraping," or any other activity with the purpose of obtaining lists of users or other information; damage, disable, overburden, or impair the Corner Market Branding Family or interfere with any other party’s use and enjoyment of the Corner Market Branding  Family; obtain or attempt to obtain any materials or information through any means not made readily accessible by  Corner Market Branding  through the Corner Market Branding  Family. Except with the express written permission of Corner Market Branding  you agree that you will not access or attempt to access password protected, secure or non-public areas of the  Corner Market Branding  Family. Except with the express written permission of  Corner Market Branding , you agree that you will not create links from any website or web page to any page within the Corner Market Branding  Family; provided however upon prior written notice to  Corner Market Branding , you may create a link directly to any of the  Corner Market Branding Family home pages. The origin of any link to any Corner Market Branding  Family home page must be accompanied by a clear and prominent attribution indicating that the link is connected to the  Corner Market Branding Family home page. By creating a link to the Corner Market Branding Family, you agree that (a) you will not employ any technology that results in the placement of content from the Corner Market Branding Family in a frame and/or a reduced pop-up window and/or any other display mechanism which changes the appearance of the Corner Market Branding Family from how it would appear if a user typed the URL in a typical browser line, (b) your site shall not display content or link to other web sites that contain content that is illegal, obscene, indecent, disparaging, discriminating or otherwise offensive, (c) you have duly registered your domain name and possess all rights necessary to use the same, and (d) you shall not in any manner access, collect, store, disclose, transfer or use any information obtained or derived from a user’s access to or use of the  Corner Market Branding  Family.  Corner Market Branding  reserves the right to revoke your permission to create such link at any time in its sole discretion and you agree to immediately cease using the link at any time that  Corner Market Branding  so requests. You agree that Corner Market Branding  may in its sole discretion and at any time terminate your access to and use of the  Corner Market Branding  Family, or any part thereof, with or without notice. You further agree that use of the Family and any of its services shall be immediately terminated if you violate these Terms of Use. In addition,  Corner Market Branding  reserves the right, in its sole discretion, to modify or discontinue the services or any portion thereof, with or without notice, and without liability to you. The services provided through the Corner Market Branding  Family may also be located on third party websites or applications, via a link, click-through advertising, or otherwise. Nothing contained in any of these services is an offer or promise by Corner Market Branding  to sell a specific product for a specific price or that any advertiser will sell any product or service for any purpose or price or on any specific terms. In addition,  Corner Market Branding does not make any representation or warranty with respect to such third party services, and is not responsible for their accuracy, sufficiency, veracity, completeness, or timeliness. You are responsible for confirming the sufficiency and reliability of any third party services, and you hereby release Corner Market Branding from any and all claims, demands, liability and damages (actual or consequential) of every kind and nature, known and unknown, suspected or unsuspected, disclosed or undisclosed, arising out of or in any way connected with your use of such Services. Further, please note that certain interactive services may be financial or mortgage tools that provide information and customized information based on user-inputted data. These tools are for the purpose of performing calculations, and are not an offer to lend. Interest rates shown are for demonstration purposes only. Actual market interest rates may vary. Please note that you may be subject to additional and/or different terms, conditions, and privacy policies when you use third party services, content (as defined below), software or sites.</p>
+ 
+ <br>
+<h4><strong>Content Contained in the  Corner Market Branding  Family</strong></h4>
+
+<p>The  Corner Market Branding  Family and all of its contents including, but not limited to: all information, text, messages, images, photos, illustrations, designs, icons, video clips, sounds, files, trademarks, copyrighted material, trade dress, software, specifications, catalogs, literature, technical information, advertisements and other content or materials on the Corner Market Branding  Family (collectively, "content") is owned by  Corner Market Branding  and/or third parties with all rights reserved unless otherwise noted.  Corner Market Branding  grants you a limited license to access and use the  Corner Market Branding Family and content solely for informational, personal and non-commercial purposes (including printing individual pages from the I Corner Market Branding  Family provided that you retain all copyright and other proprietary notices contained thereon). You are strictly prohibited from downloading (other than page caching) modifying, or making any other use of the  Corner Market Branding Family or content, except with express written consent of  Corner Market Branding  You understand that all third party content posted on, transmitted through, or linked from the  Corner Market BrandingFamily, is the sole responsibility of the third party originator of such content. Content is provided through the  Corner Market Branding  Family AS IS, and you agree that the use of and reliance on any content is at your own risk, and that under no circumstances shall Move be liable for any content or for any loss or damage of any kind incurred as a result of the use of any content made available via the services. You acknowledge that Corner Market Branding  does not screen or approve third-party content, and that Corner Market Branding  shall have the right (but not the obligation) in its sole discretion to refuse, modify, delete or move any content that is available via the Corner Market Branding  Family, for any reason.</p>
+
+<br>
+<h4><strong>Content You Provide</strong></h4>
+
+<p>To the extent that you post, upload, input, submit or otherwise transmit (collectively, "transmit" or "transmitting" as appropriate) content on or through the Corner Market Branding  Family, you agree to provide true, accurate and complete information and to refrain from impersonating or falsely representing your affiliation with any person or entity. You are entirely responsible for all content that you provide or otherwise make available via the  Corner Market Branding  Family. You also warrant and represent that you own or otherwise control all of the rights to such content including, without limitation, all the rights necessary for you to transmit such content, and to transfer your or others’ interests in such content to Corner Market Branding as provided below.
+
+You promise that you will not use the  Corner Market Branding  Family to Transmit any content not related to appropriate subject matters; which is misleading to others, including consumers; that is unlawful, harmful, threatening, abusive, harassing, tortuous, defamatory, vulgar, obscene, libelous, invasive of another’s privacy, hateful, or racially, ethnically or otherwise objectionable; that you do not have a right to post and transmit under any law or under contractual relationships; such that such posting, uploading, or transmission constitutes the infringement of any patent, trademark, trade secret, copyright or other proprietary rights of any party; and materials that contain software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment; or intentionally or unintentionally violate any applicable local, state, national or international law, or any regulations having the force of law, including the Civil Rights Act of 1866, the Fair Housing Act, the Americans with Disabilities Act, and the Equal Credit Opportunity Act. By transmitting content to the Corner Market Branding  Family, you grant, and you represent and warrant that you have the right to grant to Corner Market Branding  an irrevocable, perpetual, non-exclusive, fully paid, worldwide license to use, copy, perform, display, and distribute the content and to prepare derivative works of, or incorporate into other works, the content, and to grant and authorize sublicenses (through multiple tiers) of the foregoing. Furthermore, by posting content to any public area of the Corner Market Branding  Family, you grant  Corner Market Branding  all rights necessary to prohibit any subsequent aggregation, display, copying, duplication, reproduction, or exploitation of the content on the Corner Market Branding Family by any party for any purpose.  Corner Market Branding  is committed to maintaining the privacy and security of any and all such information that you provide to Corner Market Branding through the Corner Market Branding  Family in accordance with its Privacy Policy. Please click here to review the  Corner Market Branding  Privacy Policy.
+</p>
+ 
+ <br>
+<h4><strong>Applicable Law</strong></h4>
+
+
+<p>This Terms of Use is governed by the laws of the State of California, U.S.A. without regard to conflicts of laws principles. You hereby consent to the exclusive jurisdiction and venue of courts sitting in California, County of Temecula and/or Central District of California in all disputes arising out of or relating to accessing or using of the  Corner Market Branding  Family. Access or use of the  Corner Market Branding  Family is unauthorized in any jurisdiction that does not give effect to all provisions of these terms and conditions, including without limitation this paragraph. You agree that no joint venture, partnership, employment, or agency relationship exists between you and  Corner Market Branding  as a result of the Terms of Use or accessing or using the Corner Market Branding Family.  Corner Market Branding  performance under the Terms of Use is subject to existing laws and legal process, and nothing contained in the Terms of Use is in derogation of Corner Market Branding  right to comply with governmental, court and law enforcement requests or requirements relating to your access or use of the  Corner Market Branding  Family or information provided to or gathered by  Corner Market Branding  with respect to such use.</p>
+
+<br>
+<h4><strong>Interpretation of the Terms of Use</strong></h4>
+
+<p>If any part of the Terms of Use is determined to be invalid or unenforceable pursuant to applicable law including, but not limited to: the warranty disclaimers and liability limitations contained herein, then the invalid or unenforceable provision will be deemed superseded by a valid, enforceable provision that most closely matches the intent of the original provision and the remainder of the Terms of Use shall continue in effect. Unless otherwise specified herein (or in any other definitive written agreement between you and  Corner Market Branding ), the Terms of Use constitutes the entire agreement between you and  Corner Market Branding  with respect to the Corner Market Branding  Family and it supersedes all prior or contemporaneous communications and proposals, whether electronic, oral or written, between you and  Corner Market Branding with respect to the Corner Market Branding  Family. A printed version of the Terms of Use and of any notice given in electronic form shall be admissible in judicial or administrative proceedings based upon or relating to the Terms of Use to the same extent and subject to the same conditions as other business documents and records originally generated and maintained in printed form.</p>
+
+<br>
+<h4><strong>Disclaimer of Warranties</strong></h4>
+
+<p>YOU EXPRESSLY UNDERSTAND AND AGREE THAT: YOUR USE OF AND RELIANCE UPON ANY AND ALL OF THE  Corner Market Branding  FAMILY, SERVICES AND/OR CONTENT IS AT YOUR SOLE RISK AND IS MADE AVAILABLE ON AN "AS IS" AND "AS AVAILABLE" BASIS. MOVE MAKES NO EXPRESS OR IMPLIED REPRESENTATIONS, WARRANTIES, OR GUARANTEES WITH REGARD TO THE APPROPRIATENESS, ACCURACY, SUFFICIENCY, CORRECTNESS, VERACITY, VALUE, COMPLETENESS, OR TIMELINESS OF THE  Corner Market Branding  FAMILY, SERVICES AND/OR CONTENT. Corner Market Branding  EXPRESSLY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO: THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.</p>
+
+<br>
+<h4><strong>Indemnification</strong></h4>
+
+<p>YOU AGREE TO INDEMNIFY AND HOLD  Corner Market Branding , ITS THIRD-PARTY VENDORS, CORPORATE AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES AND AGENTS HARMLESS FROM ANY AND ALL CLAIMS AND DEMANDS, INCLUDING, BUT NOT LIMITED TO REASONABLE ATTORNEYS’ FEES, MADE BY ANY THIRD-PARTY DUE TO OR ARISING OUT OF ANY CONTENT, SUBMITTED, POSTED, OR OTHERWISE PROVIDED BY YOU TO THE  Corner Market Branding  FAMILY AND/OR  Corner Market Branding  AND/OR ITS THIRD PARTY ADVERTISERS AND ANY BREACH BY YOU OR YOUR AFFILIATES, EMPLOYEES, AGENTS AND REPRESENTATIVES OF THESE TERMS OF USE.</p>
+
+<br>
+<h4><strong>Limitation of Liability</strong></h4>
+
+<p>IN NO EVENT SHALL MOVE BE LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER INCLUDING, WITHOUT LIMITATION: DAMAGES FOR LOSS OF USE, DATA OR PROFITS, ARISING OUT OF OR IN ANY WAY CONNECTED WITH THE USE OR PERFORMANCE OF THE Corner Market Branding  FAMILY, WITH THE DELAY OR INABILITY TO ACCESS OR USE THE Corner Market Branding FAMILY OR RELATED SERVICES, THE PROVISION OF OR FAILURE TO PROVIDE SERVICES, OR FOR ANY CONTENT, SOFTWARE, PRODUCTS AND SERVICES MADE AVAILABLE OR OBTAINED THROUGH THE Corner Market Branding  FAMILY, OR OTHERWISE ARISING OUT OF THE USE OF THE  Corner Market Branding  FAMILY, WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY OR OTHERWISE, EVEN IF MOVE HAS BEEN ADVISED OF THE POSSIBILITY OF DAMAGES. ANY SERVICES OR CONTENT MADE AVAILABLE OR OBTAINED THROUGH THE USE OF THE Corner Market Branding  FAMILY, AND ALL OTHER USE OF THE Corner Market Branding  FAMILY, IS DONE AT YOUR OWN DISCRETION AND RISK AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS THEREFROM. IF YOU ARE DISSATISFIED WITH ANY PORTION OF THE MOVE NETWORK, OR WITH ANY OF THESE TERMS OF USE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE Corner Market Branding FAMILY.</p>
+
+<br>
+<h4><strong>Copyright</strong></h4>
+
+<p>All materials of the Corner Market Branding  Family (as well as the organization and layout of the  Corner Market Branding  Family) are owned and copyrighted or licensed by  Corner Market Branding  , its corporate affiliates or its third-party vendors. © Corner Market Branding  2019 all rights reserved. No reproduction, distribution, or transmission of the copyrighted materials of the Corner Market Branding  Family is permitted without the written permission of  Corner Market Branding . Any rights not expressly granted herein are reserved. Pursuant to Title 17, United States Code, Section 512, notifications of claimed copyright infringement should be sent to Corner Market Branding  Designated Agent set forth below. All inquiries must be filed in accordance with Title 17, United States Code, Section 512</p>
+ 
+</div>
+
+</body>
+</html>
